@@ -34,10 +34,10 @@ const CachedPosts = () => {
 
       <div>{isLoading && "Loading..."}</div>
       {filteredData.map((post) => (
-        <>
-          <h3 key={post.id}>{post.title}</h3>
+        <div key={post.id}>
+          <h4>{post.title}</h4>
           <p>{post.body}</p>
-        </>
+        </div>
       ))}
     </div>
   );
